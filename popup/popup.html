@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="../icons/icon-32.png" alt="BriefURL Icon" class="header-icon">
+      <h1>BriefURL</h1>
+    </div>
+   
+    <div class="section">
+      <h2>Shortening Service</h2>
+      <div class="radio-options">
+        <label>
+          <input type="radio" name="service" value="is.gd" id="isGd">
+          <span>is.gd</span>
+        </label>
+        <label>
+          <input type="radio" name="service" value="v.gd" id="vGd">
+          <span>v.gd</span>
+        </label>
+      </div>
+    </div>
+   
+    <div class="section">
+      <h2>Options</h2>
+      <div class="checkbox-options">
+        <label>
+          <input type="checkbox" id="showNotifications">
+          <span>Show notifications</span>
+        </label>
+      </div>
+    </div>
+   
+    <div class="buttons">
+      <button id="saveButton">Save Settings</button>
+    </div>
+   
+    <div id="status" class="status-message"></div>
+   
+    <div class="footer">
+      <div class="footer-container">
+        <div class="shortcut-info">Keyboard shortcut: <strong>Ctrl+Shift+S</strong></div>
+        <a href="https://github.com/winters27/firefox-link-shortener/tree/main" class="github-link" target="_blank" title="View on GitHub">
+          <svg width="20" height="20" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217C0 70.973 13.993 89.18 33.405 95.699C35.832 96.169 36.721 94.694 36.721 93.426C36.721 92.286 36.641 88.873 36.641 84.737C23.051 87.651 20.185 78.765 20.185 78.765C17.955 73.069 14.731 71.594 14.731 71.594C10.29 68.576 15.052 68.576 15.052 68.576C19.975 68.902 22.566 73.581 22.566 73.581C26.911 81.104 33.939 78.969 36.881 77.669C37.241 74.473 38.51 72.257 39.857 71.032C29.051 69.839 17.686 65.59 17.686 46.65C17.686 41.258 19.572 36.882 22.646 33.496C22.166 32.255 20.5 27.133 23.171 20.362C23.171 20.362 27.276 19.059 36.641 25.423C40.587 24.323 44.773 23.762 48.95 23.757C53.12 23.757 57.37 24.32 61.26 25.423C70.625 19.059 74.73 20.362 74.73 20.362C77.401 27.133 75.735 32.255 75.255 33.496C78.33 36.882 80.215 41.258 80.215 46.65C80.215 65.59 68.85 69.809 58.015 71.002C59.743 72.552 61.26 75.504 61.26 80.082C61.26 86.488 61.18 91.802 61.18 93.426C61.18 94.694 62.069 96.169 64.496 95.699C83.908 89.18 97.901 70.973 97.901 49.217C97.901 22 75.979 0 48.854 0Z" fill="#97b1b9"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

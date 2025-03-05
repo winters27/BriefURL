@@ -1,0 +1,45 @@
+{
+    "manifest_version": 2,
+    "name": "BriefURL",
+    "version": "1.1",
+    "description": "Adds context menu options for shortening URLs using is.gd or v.gd",
+    "permissions": [
+      "contextMenus",
+      "clipboardWrite",
+      "activeTab",
+      "tabs",
+      "storage",
+      "https://is.gd/*",
+      "https://v.gd/*",
+      "notifications"
+    ],
+    "browser_action": {
+      "default_title": "BriefURL Settings",
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+      }
+    },
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "commands": {
+      "shortcut-shorten-url": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S",
+          "mac": "Command+Shift+S"
+        },
+        "description": "Shorten the current URL"
+      }
+    },
+    "icons": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+    
+  }
