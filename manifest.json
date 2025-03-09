@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "BriefURL",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Adds context menu options for shortening URLs using is.gd or v.gd",
     "permissions": [
       "contextMenus",
@@ -11,6 +11,8 @@
       "storage",
       "https://is.gd/*",
       "https://v.gd/*",
+      "https://x.gd/*",
+      "https://anon.to/*",
       "notifications"
     ],
     "browser_action": {
